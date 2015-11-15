@@ -391,16 +391,17 @@ NSString * const  ReaderActionSheetItemTitleUnbookmark = @"Unbookmark";
         [self.remoteNavigationItem setLeftBarButtonItem:doneBarButtonItem];
         
     }
-    
+
     thumbsBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Reader.bundle/Thumbs"]
                                                                            style:UIBarButtonItemStylePlain
                                                                           target:self
                                                                           action:@selector(pushThumbsBarButtonItem:)];
     
-    
+    /*
     moreBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                       target:self
                                                                       action:@selector(pushActionBarButtonItem:)];
+	 */
     
     [self.remoteNavigationItem setRightBarButtonItems:@[moreBarButtonItem, thumbsBarButton]];
 }
